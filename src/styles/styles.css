@@ -1,0 +1,59 @@
+.box-layout {
+    align-items: center;
+    background: url('./images/bg.jpg');
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+  }
+  
+  .box-layout__box {
+    background: white;
+    border: 8px solid white;
+    padding:8px 16px;
+    text-align: center;
+  }
+  
+  .box-layout__title {
+    margin: 0 0 10px 0;
+    line-height: 1;
+  }
+  
+  .button {
+    background: #234564;
+    border: none;
+    color: white;
+    display: inline-block;
+    font-size: large;
+    font-weight: 300;
+    line-height: 1;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  .button--link {
+    background: none;
+  }
+  
+  .button--secondary {
+    background: #888;
+  }
+  
+  .content-container {
+    margin: 0 auto;
+    padding: 0 8px;
+    max-width: 80rem;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+      margin-bottom: 8px;
+  }
+  
+  .form__error {
+    margin: 0 0 6px 0;
+    font-style: italic;
+  }
+  

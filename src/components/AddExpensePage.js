@@ -1,17 +1,24 @@
 import React from 'react';
 import ExpenseForm from './ExpenseForm';
 import { connect } from 'react-redux';
-import { addExpense } from '../actions/expenses';
+import { startAddExpense } from '../actions/expenses';
+import '../styles/styles.css';
 
 const AddExpensePage = (props) => (
+  <div>
     <div>
-      <h2>Add Expense</h2>
+      <div className="content-container">
+      <h1>Add Expense</h1>
+      </div>
+      </div>
+      <div className="content-container">
       <ExpenseForm 
       onSubmit={(expense) => {
-        props.dispatch(addExpense(expense))
+        props.dispatch(startAddExpense(expense))
         props.history.push('/')
       }}
       />
+    </div>
     </div>
   );
 

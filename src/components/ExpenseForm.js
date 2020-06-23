@@ -2,6 +2,7 @@ import React from 'react';
 import moment from 'moment';
 import { SingleDatePicker } from 'react-dates';
 import 'react-dates/lib/css/_datepicker.css';
+import '../styles/styles.css';
 
 class ExpenseForm extends React.Component {
     constructor(props){
@@ -62,9 +63,8 @@ class ExpenseForm extends React.Component {
 
     render(){
         return(
-            <div>
-                {this.state.error && <p>{this.state.error}</p>}
-            <form onSubmit={this.onSubmit}>
+            <form className="form" onSubmit={this.onSubmit}>
+            {this.state.error && <p className="form__error">{this.state.error}</p>}
                 <input type="text" 
                 placeholder="description"
                 autoFocus
@@ -91,7 +91,6 @@ class ExpenseForm extends React.Component {
                     </textarea> 
                     <button>Add Expense</button>
             </form>
-            </div>
         )
     }
 }
